@@ -1,0 +1,237 @@
+:root {
+    --letra2: #cff09e;
+    --letra1: white;
+    --menu: #59CC9A;
+    --fondo: #25597c;
+    --encabezado: #0b486b;
+    --botones: #81ed9a;
+
+}
+* {
+    /* font-family: "Lobster", sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+    /* padding: 14px 20px; */
+    
+}
+p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link li a:hover {
+    background-color: var(--botones);
+    border-radius: 10px;
+}
+
+header{
+    /* border: 5px solid black; */
+    position: fixed;
+    width: 100%;
+    
+  
+   
+   
+}
+
+.flex {
+    /* border: 2px solid rgb(133, 247, 3); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    background-color: var(--encabezado);
+    
+    
+    }
+.flex h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    align-self: self-end;
+    color: white;
+    
+
+}
+
+#logo img{
+    height: 100px;
+    background: none;
+}
+
+#session img{
+    height: 100px;
+}
+
+.navbar{
+    /* border: 3px solid rgb(235, 11, 11); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--encabezado);
+
+   
+    /* height: 100px; */
+}
+
+.nav-link{
+    display: flex;
+    font-size: 2.5rem;
+    gap: 5px;
+    list-style-type: none;
+    text-transform: uppercase;
+    
+}
+.nav-link li{
+    background-color:var(--menu);
+    border-radius: 10px;
+}
+
+main{
+    display: grid;
+    background-color: var(--fondo);
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fondo);
+    
+}
+
+.tetra{
+    text-align: center;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+}
+.tetra img{
+    height: 800px;
+    width: 600px;
+    border-radius: 10px;
+
+}
+    
+.tabla-docente{
+    align-self:auto;
+    background-color: #3AA4A6;
+    font-size: 30px;
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}
+
+.button{
+    background-color: var(--botones);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    
+
+}
+.button:hover{
+    background-color: var(--menu);
+    border-radius: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    background-color: var(--fondo);
+    color: white;
+    font-size: 1.5rem;
+    background-color: var(--encabezado);
+    width: 100%;
+    height: 50px;
+   
+}
+.docentes h3 {
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* margin-top: 50px; */
+    text-align: center;
+    color: var(--letra2);
+    align-self: center;
+    
+}
+.docentes{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    flex-direction: column;
+    
+}
+.flex-footer {
+    /* border: 2px solid rgb(133, 247, 3); */
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+.flex-footer li a:hover{
+    color: var(--letra2);
+}
+.info{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-style {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}.form-style h2{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.form-style label{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    display: inline-block;
+    width: 110px;
+}
+.form-ingreso-registro{
+    margin-top: 50px;
+}
+.form-style input{
+    border-radius: 5px;
+    
+}
+.caja-flex{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    flex-grow: 1;
+}
+.tema1-imagen img{
+    border: 1px solid white;
+    width: 500px;
+    border-radius: 10px;
+}
+.tema1-parrafo{
+    margin-left: 100px;
+}
+
+
+
+
+
+
+

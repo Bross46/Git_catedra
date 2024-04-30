@@ -1,0 +1,89 @@
+:root {
+    --color1: #49793d;
+    --color2: #719b64;
+    --color3: #9abc8a;
+    --color4: #c2deb1;
+    --color5: #eaffd8;
+   
+
+}
+
+body {
+    background-color: var( --color5);
+    font-family: sans-serif;
+}
+h3 {
+    font-size:3vw ;
+}
+thead {
+    font-size: 2vw;
+}
+tbody{
+    font-size: 1.5vw;
+}
+footer{
+    font-size: 1.2vw;
+}
+.encabezado{
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    border: rgb(234, 242, 9) 15px solid; 
+    margin: 15px;
+    align-content: center;
+    
+
+}
+.encabezado header{
+    display: flex;
+    background-color: chocolate;
+    font-size:var(--titulo1);
+    align-items: center;
+    text-align: center;
+    
+}
+.docente h3,.imagen ,footer{
+
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(236, 127, 255);
+    border: rgb(234, 242, 9) 1px solid; 
+    margin: 2px;
+    align-items: center;
+    
+}
+
+.encabezado section div {
+    display: flex;
+    background-color: rgb(21, 0, 255);
+    justify-content: center;
+    align-items: center;
+}
+.barraNavegacion {
+    
+    background-color: greenyellow;
+    border: rgb(242, 153, 9) 15px solid; 
+}
+nav ol{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2ch ;
+    border: deeppink 5 px solid;
+    
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(8, 174, 230);
+    text-align: center;
+}
+table thead{
+    background-color: coral;
+}
+
