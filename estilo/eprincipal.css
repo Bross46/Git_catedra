@@ -54,7 +54,7 @@ header{
     
     
     }
-.flex h1{
+h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
     text-transform: uppercase;
@@ -130,14 +130,14 @@ main{
     align-self: center;
 }
 
+
+
 .button{
     background-color: var(--botones);
     padding: 10px 20px;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
-    
-
 }
 .button:hover{
     background-color: var(--menu);
@@ -177,6 +177,7 @@ footer{
     gap: 40px;
     list-style-type: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    flex: 1;
 }
 .flex-footer li a:hover{
     color: var(--letra2);
@@ -198,7 +199,7 @@ footer{
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-.form-style label{
+label{
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3rem;
@@ -209,7 +210,7 @@ footer{
     margin-top: 50px;
 }
 .form-style input{
-    border-radius: 5px;
+    border-radius: 10px;
     
 }
 .caja-flex{
@@ -228,7 +229,34 @@ footer{
 .tema1-parrafo{
     margin-left: 100px;
 }
+/* ESTILOS DE CONTACTO.HTML */
 
+.flex-contacto{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--encabezado);
+    
+}
+.flex-contacto h1{
+    margin-left: 200px
+
+}
+.form-style-contacto{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.centrar-button{
+    margin-left: 50%;
+    margin-top: 10px;
+
+}
+
+
+  
 
 
 

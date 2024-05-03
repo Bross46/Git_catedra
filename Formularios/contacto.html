@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../estilo/eprincipal.css">
+</head>
+<body>
+    <header>
+        <div class="flex-contacto">
+            <div id="logo">
+                <img  src="../imagen/logouinsolo.png" alt="Logo utn">
+                <!-- <figcaption>Logo de la UTN</figcaption> -->
+            </div>
+                <h1>Contacto</h1>
+        </div>
+         
+    <main>
+        <section class="form-style-contacto">
+            <form  action="">
+                <div>
+                    <label for="nombre"> Nombre:</label>
+                    <input type="text" id="nombre" name="Nombre"> 
+                </div>
+                <div>
+                    <label for="apellido"> Apellido:</label>
+                    <input type="text" id="apellido" name="Apellido">
+                </div>
+                <div>
+                    <label for="correo"> Email:</label>
+                    <input type="email" id="correo" name="Email">
+                </div>
+                <div>
+                    <label for="turno">Curso</label>
+                    <select name="turno" id="curso">
+                        <option value="">--Seleccione</option>
+                        <option value="manana">mañana</option>
+                        <option value="tarde">tarde</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="consulta"> Consulta</label>
+                    <textarea name="consulta" rows="4" cols="40">Escriba algo</textarea>
+                </div>
+                <div class="centrar-button">
+                    <input class="button" type="submit" value="enviar">
+                </div>    
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="flex-footer">
+            <li><a href="./principal.html">Inicio</a></li>
+            <li><a href="./unidades/Unidad01.html">Cursos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <p class="info">Pagina realizada para CAC Grupo 6</p>
+    </footer>
+</body>
+</html>
