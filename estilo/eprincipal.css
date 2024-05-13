@@ -54,6 +54,16 @@ header{
     
     
     }
+
+/* Estos son los estilos de la clase session     */
+.session{
+    display: flex;
+    flex-direction: column;
+}
+.session img{
+    height: 100px;
+}
+
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
@@ -69,9 +79,7 @@ h1{
     background: none;
 }
 
-#session img{
-    height: 100px;
-}
+
 
 .navbar{
     /* border: 3px solid rgb(235, 11, 11); */
@@ -128,6 +136,10 @@ main{
     width: 300px;
     height: 300px;
     align-self: center;
+    
+}
+.tabla-docente td{
+    border: 1px solid black;
 }
 
 
@@ -255,6 +267,24 @@ label{
 
 }
 
+.button_a{
+    background-color: var(--botones);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+}
+.button_a:hover{
+    background-color: var(--menu);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
 
   
 
