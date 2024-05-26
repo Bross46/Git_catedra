@@ -12,84 +12,81 @@
 </head>
 <body>
     <header>
-        <div class="flex">
-            <div id="logo">
-                <img  src="../static/img/logouinsolo.png" alt="Logo utn">
-                <!-- <figcaption>Logo de la UTN</figcaption> -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../principal.html"></a>
+                <img src="../static/img/logoutnsolo01.jpeg" alt="Logo UTN">
+                <span class="logo-text">CS</span>
             </div>
-            <h1>ciencia de materiales 2024</h1>
-    
-    
-            <div class="session">
-                 <img src="../static/img/Icono_usuario.png" alt="icono usuario">
-                    <figcaption></figcaption>
-                        <a href="../templates/Ingreso.html" class="button_a">Ingreso    
-                        </a>
-            </div>
-        </div>    
-
-        <nav class=navbar>
-            <ul class="nav-link">
-                <li><a href="../principal.html">Inicio</a></li>
-                <li><a href="#">curso</a></li>
-                <li><a href="../templates/Unidad01.html">Unidades</a></li>
-                <li><a href="../templates/alumnos.html">Registro</a></li>
-                <li><a href="#">Consulta</a></li>
-                <li> <a href="#">contacto</a></li>
-            </ul>
-
-        </nav>
-    </header>
-    
+           
+        </nav>    
+        </header>
     <main>
         <section class="form-style">
             <h2>Registro Alumnos Curso</h2>
-            <form action="" method="get">
-                <div>
+            <form action="" method="get" id="formRegister">
+                <div class="form-control">
                     <label for="nombre"> Nombre:</label>
-                    <input type="text" id="nombre" name="Nombre"> 
+                    <input type="text" id="nombre" name="nombre"> 
                 </div>
-                <div>
+                <div class="error" id="error-nombre"></div>
+                <div class="form-control">
                     <label for="apellido"> Apellido:</label>
-                    <input type="text" id="apellido" name="Apellido">
+                    <input type="text" id="apellido" name="apellido">
                 </div>
-                <div>
+                <div class="error" id="error-apellido"></div>
+                <div class="form-control">
                     <label for="correo"> Email:</label>
-                    <input type="email" id="correo" name="Email">
+                    <input type="email" id="correo" name="email">
                 </div>
-                <div>
+                <div class="error" id="error-correo"></div>
+                <div class="form-control">
                     <label for="legajo"> Legajo:</label>
-                    <input type="number" id="legajo" name="Legajo">
+                    <input type="number" id="legajo" name="legajo">
                 </div>
-                <div>
+                <div class="error" id="error-legajo"></div>
+                <div class="form-control">
                     <label for="nacimiento">Fecha de Nacimiento</label>
-                    <input type="date"  id="nacimiento" name="Nacimiento">
+                    <input type="date"  id="nacimiento" name="nacimiento">
                 </div>
-                <div>
-                    <label for="Curso"> Curso</label>
-                    <select name="turno" id="curso">
+                <div class="form-control">
+                    <label for="curso"> Curso</label>
+                    <select name="turno" id="curso" class="form-select">
                         <option value="">--Seleccione</option>
                         <option value="manana">mañana</option>
                         <option value="tarde">tarde</option>
                     </select>
                 </div>
-                <div>
+                <div class="form-control">
                     <label for="contrasena">Password</label>
-                    <input type="password"  id="contraseña" name="Password">
+                    <input type="password"  id="contraseña" name="contraseña">
+                </div>
+                <div class="error" id="error-contraseña"></div>
+                <div class="form-terms"> 
+                    <div class="terms">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">Acepto términos y condiciones</label>
+                    </div>
                 </div>
 
 
+
+
                 
-               
-                <input class="button" type="submit" value="enviar">
+                <div class="botones">
+
+                    <a class="button_a" href="../principal.html">Atras</a>
+                    <button type="submit" id="btn-send" class="button_a"> 
+                    Registrarse
+                    </button>
+                </div>
         
         
             </form>
 
         </section>
-        
     </main>
     
-    
+    <script src="../static/js/validation-registro.js"></script>    
 </body>
 </html>

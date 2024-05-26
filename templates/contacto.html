@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../estilo/eprincipal.css">
+    <link rel="stylesheet" href="../static/css/contacto.css">
 </head>
 <body>
     <header>
-        <div class="flex-contacto">
-            <div id="logo">
-                <img  src="../imagen/logouinsolo.png" alt="Logo utn">
-                <!-- <figcaption>Logo de la UTN</figcaption> -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../principal.html"></a>
+                <img src="../static/img/logoutnsolo01.jpeg" alt="Logo UTN">
+                <span class="logo-text">CS</span>
             </div>
-                <h1>Contacto</h1>
-        </div>
+           
+        </nav>    
+        </header>
          
     <main>
-        <section class="form-style-contacto">
+        <section class="form-style">
+            <h2>Envianos su consulta</h2>
             <form  action="">
-                <div>
+                <div class="form-control">
                     <label for="nombre"> Nombre:</label>
-                    <input type="text" id="nombre" name="Nombre"> 
+                    <input type="text" id="nombre" name="nombre"> 
                 </div>
-                <div>
+                <div class="form-control">
                     <label for="apellido"> Apellido:</label>
-                    <input type="text" id="apellido" name="Apellido">
+                    <input type="text" id="apellido" name="apellido">
                 </div>
-                <div>
+                <div class="form-control">
                     <label for="correo"> Email:</label>
-                    <input type="email" id="correo" name="Email">
+                    <input type="email" id="correo" name="correo">
                 </div>
-                <div>
+                <div class="form-control">
                     <label for="turno">Curso</label>
                     <select name="turno" id="curso">
                         <option value="">--Seleccione</option>
@@ -39,24 +42,19 @@
                         <option value="tarde">tarde</option>
                     </select>
                 </div>
-                <div>
-                    <label for="consulta"> Consulta</label>
-                    <textarea name="consulta" rows="4" cols="40">Escriba algo</textarea>
+                <div class="form-control">
+                    <textarea name="consulta" rows="4" cols="40">  Escriba su consulta aqui!</textarea>
                 </div>
-                <div class="centrar-button">
-                    <input class="button" type="submit" value="enviar">
-                </div>    
+                <div class="botones">
+                    <a class="button_a" href="../principal.html">Atras</a>
+                    <button type="submit" id="btn-send" class="button_a"> 
+                    Enviar
+                    </button>
+                </div>   
             </form>
         </section>
     </main>
+    <script src="../static/js/validation-contacto.js"></script>   
 
-    <footer>
-        <ul class="flex-footer">
-            <li><a href="./principal.html">Inicio</a></li>
-            <li><a href="./unidades/Unidad01.html">Cursos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-        <p class="info">Pagina realizada para CAC Grupo 6</p>
-    </footer>
 </body>
 </html>

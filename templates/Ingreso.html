@@ -5,78 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingreso</title>
     <link rel="icon" href="imagen/logoutn.ico">
-    <link rel="stylesheet" href="../estilo/eprincipal.css">
+    <link rel="stylesheet" href="../static/css/ingreso.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="flex">
-            <div id="logo">
-                <img  src="../imagen/logouinsolo.png" alt="Logo utn">
-                <!-- <figcaption>Logo de la UTN</figcaption> -->
-            </div>
-            <h1>ciencia de materiales 2024</h1>
-    
-    
-            <div class="session">
-                 <img src="../imagen/Icono_usuario.png" alt="icono usuario">
-                    <figcaption></figcaption>
-                        <a href="./Ingreso.html" class="button_a">Loguearse
-                              
-                        </a>
-            </div>
-        </div>    
-
-        <nav class=navbar>
-            <ul class="nav-link">
-                <li><a href="../principal.html">Inicio</a></li>
-                <li><a href="#">curso</a></li>
-                <li><a href="#">Unidades</a></li>
-                <li><a href="./alumnos.html">Registro</a></li>
-                <li><a href="#">Consulta</a></li>
-                <li> <a href="#">contacto</a></li>
-            </ul>
-
-        </nav>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="../principal.html"></a>
+                    <img src="../static/img/logoutnsolo01.jpeg" alt="Logo UTN">
+                    <span class="logo-text">CS</span>
+                </div>
+               
+            </nav>    
+            </header>
     </header>
     <main>
         <section class="form-style">
             <h2>Ingreso a la Plataforma</h2>
             <form action="" method="get">
     
-                <div>
-                    <label for="usuario"> Usuario</label>
-                    <select name="Usuario" id="usuario">
+                <div class="form-control">
+                    <select name="Usuario" id="usuario" class="form-select">
                         <option value="">--Seleccione</option>
                         <option value="alumno">Alumno</option>
                         <option value="docente">Docente</option>
                     </select>
                 </div>
-    
+                <div class="form-control">
+
                     <label for="correo"> Email:</label>
                     <input type="email" id="correo" name="Email">
                 </div>
     
-                <div>
+                <div class="form-control">
                     <label for="contrasena">Password</label>
                     <input type="password"  id="contraseña" name="Password">
                 </div>
          
-               <div class="centrar-button">
-                    <input class="button" type="submit" value="enviar">
+               <div>
+                    <input class="button_a" type="submit" value="enviar">
                </div>
         
-        
-            </form>
-    
-            <div class="form-ingreso-registro">
-                <h1>REGISTRARSE</h1>
-                <a href="alumnos.html"><input class="button" type="button" value="Alumno"></a>
-                <a href="docente.html"><input class="button" type="button" value="Docente"></a>
+        <div class="form-registro">
+                <h1>Registráte</h1>
+                <a href="alumnos.html"><input class="button_a" type="button" value="Alumno"></a>
+                <a href="docente.html"><input class="button_a" type="button" value="Docente"></a>
                 
             </div>
+            </form>
+    
+            
         </section>    
     </main>
 </body>

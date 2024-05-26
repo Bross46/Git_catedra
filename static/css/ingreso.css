@@ -210,6 +210,14 @@ body::before {
     cursor: pointer;
 }
 
+
+.form-registro h1{
+    border-top: 1px solid black;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
 .form-control label {
     position: absolute;
     left: 20px;

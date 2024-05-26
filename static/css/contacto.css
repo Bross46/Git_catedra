@@ -138,7 +138,7 @@ body::before {
     position: absolute;
     left: 50%;
     top: 75%;
-    border-radius: 4px;
+    border-radius: 30px;
     padding: 20px 70px;
     width: 450px;
     transform: translate(-50%, -50%);
@@ -208,6 +208,12 @@ body::before {
     padding: 10px 20px;
     background-color: #0071eb;
     cursor: pointer;
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-control label {
@@ -295,6 +301,13 @@ form .form-terms :where(label, a) {
 .form-control input.error, .form-select.error{
     border: 2px solid red; 
 }
+
+.form-control textarea{
+    border-radius: 10px;
+    background-color: var(--fondo);
+    color: white;
+}
+
 
 @media (max-width: 740px) {
     body::before {
