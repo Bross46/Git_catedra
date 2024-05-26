@@ -1,0 +1,489 @@
+:root {
+    --letra2: #cff09e;
+    --letra1: white;
+    --menu: #59CC9A;
+    --fondo: #25597c;
+    --encabezado: #0b486bd3;
+    --botones: #81ed9a;
+
+}
+* {
+    /* font-family: "Lobster", sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--letra1);
+    /* padding: 14px 20px; */
+    
+}
+p{
+    color: var(--letra1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+h1{
+    color: var(--letra1);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link li a:hover {
+    background-color: var(--botones);
+    border-radius: 10px;
+}
+
+header{
+    /* border: 5px solid black; */
+    position: fixed;
+    width: 100%;
+    
+  
+   
+   
+}
+
+.flex {
+    /* border: 2px solid rgb(133, 247, 3); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    background-color: var(--encabezado);
+    
+    
+    }
+
+/* Estos son los estilos de la clase session     */
+.session{
+    display: flex;
+    flex-direction: column;
+}
+.session img{
+    height: 100px;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    align-self: self-end;
+    color: var(--letra1);
+    
+
+}
+
+#logo img{
+    height: 100px;
+    background: none;
+}
+
+
+
+.navbar{
+    /* border: 3px solid rgb(235, 11, 11); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--encabezado);
+
+   
+    /* height: 100px; */
+}
+
+.nav-link{
+    display: flex;
+    font-size: 2.5rem;
+    gap: 5px;
+    list-style-type: none;
+    text-transform: uppercase;
+    
+}
+.nav-link li{
+    background-color:var(--menu);
+    border-radius: 10px;
+}
+
+main{
+    display: grid;
+    background-color: var(--fondo);
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fondo);
+    
+}
+
+.tetra{
+    text-align: center;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+.tetra img{
+
+    height: 800px;
+    width: 600px;
+    border-radius: 10px;
+
+}
+
+    
+.tabla-docente{
+    align-self:auto;
+    background-color: #3AA4A6;
+    font-size: 30px;
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    
+}
+.tabla-docente td{
+    border: 1px solid black;
+}
+
+
+
+.button{
+    background-color: var(--botones);
+    padding: 10px 20px;
+    color: var(--letra1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--menu);
+    border-radius: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    background-color: var(--fondo);
+    color: var(--letra1);
+    font-size: 1.5rem;
+    background-color: var(--encabezado);
+    width: 100%;
+    height: 50px;
+   
+}
+.docentes h3 {
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* margin-top: 50px; */
+    text-align: center;
+    color: var(--letra2);
+    align-self: center;
+    
+}
+.docentes{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    flex-direction: column;
+    
+}
+.flex-footer {
+    /* border: 2px solid rgb(133, 247, 3); */
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    flex: 1;
+}
+.flex-footer li a:hover{
+    color: var(--letra2);
+}
+.info{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-style {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}.form-style h2{
+    color: var(--letra1);
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+label{
+    color: var(--letra1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    display: inline-block;
+    width: 110px;
+}
+.form-ingreso-registro{
+    margin-top: 50px;
+}
+.form-style input{
+    border-radius: 10px;
+    
+}
+.caja-flex{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    flex-grow: 1;
+}
+.tema1-imagen img{
+    border: 1px solid var(--letra1);
+    width: 500px;
+    border-radius: 10px;
+}
+.tema1-parrafo{
+    margin-left: 100px;
+}
+/* ESTILOS DE CONTACTO.HTML */
+
+.flex-contacto{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--encabezado);
+    
+}
+.flex-contacto h1{
+    margin-left: 200px
+
+}
+.form-style-contacto{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.centrar-button{
+    margin-left: 50%;
+    margin-top: 10px;
+
+}
+
+.button_a{
+    background-color: var(--botones);
+    padding: 10px 20px;
+    color: var(--letra1);
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+}
+.button_a:hover{
+    background-color: var(--menu);
+    padding: 14px 16px;
+    color: var(--letra1);
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none; /* Oculta el menú desplegable por defecto */
+    position: absolute;
+    background-color: var(--menu); /* Fondo del menú */
+    min-width: 160px; /* Ancho mínimo del menú */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra del menú */
+    z-index: 1; /* Asegura que el menú aparezca por encima de otros elementos */
+}
+
+/* Estilos para mostrar el menú desplegable al pasar el ratón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para los elementos del menú desplegable */
+.dropdown-content a {
+    color: var(--letra1); /* Color del texto */
+    padding: 12px 16px; /* Espaciado dentro del elemento */
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Alineación del texto */
+}
+
+/* Estilos para el hover en los elementos del menú desplegable */
+.dropdown-content a:hover {
+    background-color: var(--botones); /* Color de fondo al pasar el ratón */
+    border-radius: 0; /* Borde redondeado */
+}
+
+h2 {
+    font-size: 3rem;
+    color:var(--menu);
+}
+h3,h5,h4 {
+    font-size: 2.5rem;
+    color: var(--letra2);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+li {
+    
+    font-size: 2rem;
+    list-style-type: none;
+    padding-inline: 3rem;
+    color:var(--letra1)
+}
+iframe,img {
+    margin: 0 auto;
+    display: block;
+}
+
+.miembro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin-top:2rem  ;
+
+}
+@keyframes desplazar {
+    0% {
+      transform: translateX(-4rem); /* Desplazamiento inicial hacia la izquierda */
+    }
+    50% {
+      transform: translateX(4rem); /* Desplazamiento hacia la derecha en la mitad de la animación */
+    }
+    100% {
+      transform: translateX(-4rem); /* Vuelve al desplazamiento inicial */
+    }
+  }
+  @keyframes agrandar-achicar {
+    0%, 100% {
+      transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+      transform: scale(1.2); /* Tamaño agrandado al 120% */
+    }
+  }
+  header h1,body .flex h1,iframe {
+    animation: desplazar 5s infinite; /* La animación dura 3 segundos y se repite infinitamente */
+  }
+
+  header  #logo,body .flex #logo {
+    animation: agrandar-achicar 3s infinite alternate; /* La animación dura 3 segundos, se repite infinitamente y alterna entre agrandar y achicar */
+  }
+  @keyframes aumentar-brillo {
+    0%, 100% {
+      filter: brightness(1); /* Brillo normal */
+    }
+    50% {
+      filter: brightness(2.5); /* Aumentar el brillo al 150% */
+    }
+  }
+  
+  main img,section img {
+    animation: aumentar-brillo 10s infinite alternate; /* La animación dura 3 segundos, se repite infinitamente y alterna entre aumentar el brillo y volver a la normalidad */
+  }
+
+  
+  main img {
+    position: relative; /* Asegúrate de que las imágenes tengan posición relativa para poder aplicar z-index */
+    /* Un valor menor que el z-index del encabezado para que queden detrás */
+  }
+  footer button{
+    display: flex;
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 800px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .tetra {
+        flex-direction: column;
+    }
+
+    .tetra img {
+        height: auto;
+        width: 100%;
+    }
+
+    .tabla-docente {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .docentes h3 {
+        font-size: 2rem;
+    }
+
+    .flex-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .form-style {
+        margin-top: 100px;
+    }
+
+    .caja-flex {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .tema1-imagen img {
+        width: 100%;
+    }
+
+    .tema1-parrafo {
+        margin-left: 0;
+    }
+
+    .flex-contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-contacto h1 {
+        margin-left: 0;
+    }
+
+    .centrar-button {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3, h5, h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        padding: auto;
+        font-size: 1.5rem;
+    }
+}
