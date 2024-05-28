@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cs Materiales</title>
+    <link rel="icon" href="imagen/logoutn.ico">
+    <link rel="stylesheet" href="./static/css/eprincipal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<style>
+      main section{
+    display: flex;
+    z-index: 1
+  }
+  header {
+     /* Asegúrate de que el encabezado tenga posición relativa para poder aplicar z-index */
+    z-index: 2; /* Un valor mayor que el z-index predeterminado (normalmente 0) de las imágenes */
+  }
+</style>
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div id="logo">
+                <img src="./static/img/logoutnsolo01.jpeg" alt="Logo utn">
+            </div>
+            <h1>ciencia de materiales 2024</h1>
+            <div id="logo">
+                <img src="./static/img/logoutnsolo01.jpeg" alt="Logo utn">
+            </div>
+        </div>
+
+        <nav class="navbar" 
+        >
+            <ul class="nav-link">
+                <li><a href="./templates/docentes.html">docentes</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Material teórico</a>
+                    <div class="dropdown-content">
+                        <a href="./templates/unidad01.html">unidad01</a>
+                        <a href="./templates/unidad02.html">unidad02</a>
+                        <a href="./templates/unidad03.html">unidad03</a>
+                        <a href="./templates/unidad04.html">unidad04</a>
+                    </div>
+                </li>
+                <li><a href="./templates/contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tetra">
+            <img src="./static/img/hierro2.jpeg" alt="">
+            <img src="./static/img/hiero3.jpeg" alt="">
+        </section>
+        
+        <div class="docentes">
+            <h3>Docentes de la catedra</h3>
+            <table class="tabla-docente">
+                <thead>
+                    <tr>
+                        <th colspan="3">Docente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Profesor</td>
+                        <td>Nombre</td>
+                        <td>Ing. Claudio Del Carmine</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>cdelcarmine@frba.utn.edu.ar</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">JTP</td>
+                        <td>Nombre</td>
+                        <td>Ing. Diego Ruiz</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>jruiz@frba.utn.edu.ar</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Laboratorio</td>
+                        <td>Nombre</td>
+                        <td>Ing. Diego Zalcman</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>dfzalcman@frba.utn.edu.ar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        
+        <p class="info">Pagina realizada para CAC Grupo 6</p>
+    </footer>
+</body>
+</html>

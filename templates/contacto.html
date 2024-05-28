@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../static/img/logoutn.ico">
+    <link rel="stylesheet" href="../static/css/eprincipal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div>
+        <div class="flex">
+            <div id="logo">
+                <img  src="../static/img/logoutnsolo01.jpeg" alt="Logo utn">
+                <!-- <figcaption>Logo de la UTN</figcaption> -->
+            </div>
+            <h1>ciencia de materiales 2024</h1>
+    
+    
+            <div class="session">
+                <div id="logo">
+                    <img  src="../static/img/logoutnsolo01.jpeg" alt="Logo utn">
+                    <!-- <figcaption>Logo de la UTN</figcaption> -->
+                </div>
+            </div>
+        
+        </div>    
+
+        
+    </div>
+    
+    <main class="docentes">
+        <section class="form-style-contacto">
+            <form id="formulario" action="">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="Nombre"> 
+                    <span id="error-nombre" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="Apellido">
+                    <span id="error-apellido" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo" name="Email">
+                    <span id="error-correo" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="curso">Curso:</label>
+                    <select name="curso" id="curso">
+                        <option value="">--Seleccione--</option>
+                        <option value="mañana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                    </select>
+                    <span id="error-curso" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="consulta">Consulta:</label>
+                    <textarea name="consulta" id="consulta" rows="4" cols="40">Escriba algo</textarea>
+                    <span id="error-consulta" class="error-message"></span>
+                </div>
+                <div class="centrar-button">
+                    <input class="button" type="submit" value="Enviar">
+                </div>    
+            </form>
+        </section>
+    </main>
+    
+    <script>
+        const formulario = document.getElementById('formulario');
+
+        formulario.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const nombre = document.getElementById('nombre');
+            const apellido = document.getElementById('apellido');
+            const correo = document.getElementById('correo');
+            const curso = document.getElementById('curso');
+            const consulta = document.getElementById('consulta');
+            
+            const errorNombre = document.getElementById('error-nombre');
+            const errorApellido = document.getElementById('error-apellido');
+            const errorCorreo = document.getElementById('error-correo');
+            const errorCurso = document.getElementById('error-curso');
+            const errorConsulta = document.getElementById('error-consulta');
+
+            errorNombre.textContent = '';
+            errorApellido.textContent = '';
+            errorCorreo.textContent = '';
+            errorCurso.textContent = '';
+            errorConsulta.textContent = '';
+
+            const nombreValido = /^[a-zA-ZÀ-ÿ\s]{4,30}$/.test(nombre.value.trim());
+            if (!nombreValido) {
+                errorNombre.textContent = 'El nombre debe tener entre 4 y 30 letras';
+                nombre.focus();
+                return;
+            }
+
+            const apellidoValido = /^[a-zA-ZÀ-ÿ\s]{4,30}$/.test(apellido.value.trim());
+            if (!apellidoValido) {
+                errorApellido.textContent = 'El apellido debe tener entre 4 y 30 letras';
+                apellido.focus();
+                return;
+            }
+
+            const correoValido = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(correo.value.trim());
+            if (!correoValido) {
+                errorCorreo.textContent = 'El correo ingresado no es válido';
+                correo.focus();
+                return;
+            }
+
+            if (curso.value === '') {
+                errorCurso.textContent = 'Seleccione un curso';
+                curso.focus();
+                return;
+            }
+
+            if (consulta.value.trim() === '' || consulta.value === 'Escriba algo') {
+                errorConsulta.textContent = 'Coloque su consulta';
+                consulta.focus();
+                return;
+            }
+
+            formulario.submit();
+        });
+    </script>
+
+
+<footer>
+    <button onclick="window.location.href='../index.html'">Volver al Menú Principal</button>
+    <p class="info">Pagina realizada para CAC Grupo 6</p>
+</footer>
+  
+</body>
+</html>
